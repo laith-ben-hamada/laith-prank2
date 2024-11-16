@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prank Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        .message {
+            text-align: center;
+        }
+        .message h1 {
+            font-size: 3rem;
+            color: red;
+        }
+        .message p {
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+        @keyframes glitch {
+            0% { transform: translate(2px, -2px); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(2px, 2px); }
+            60% { transform: translate(-2px, -2px); }
+            80% { transform: translate(2px, -2px); }
+            100% { transform: translate(0, 0); }
+        }
+        .message h1, .message p {
+            animation: glitch 0.2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="message">
+        <h1>GG, Your Phone is Hacked!</h1>
+        <p>Just kidding! But be careful online :)</p>
+    </div>
+</body>
+</html>
